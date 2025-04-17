@@ -1,8 +1,8 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { use, useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 import { Briefcase } from "lucide-react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
