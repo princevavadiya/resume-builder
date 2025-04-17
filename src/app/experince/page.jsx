@@ -9,7 +9,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 export default function ExperienceSelection() {
   const [selected, setSelected] = useState();
   const router = useRouter();
-  const searchParams = useSearchParams();
+  
   const experiences = ["No experience", "Entry-level", "Mid-level", "Senior"];
 
 
