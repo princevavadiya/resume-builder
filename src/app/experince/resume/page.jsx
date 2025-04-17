@@ -1,6 +1,6 @@
 "use client";
 import { use, useEffect, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import { Upload, User } from "lucide-react";
@@ -19,7 +19,6 @@ const formSchema = z.object({
 
 export default function HeaderSection() {
   const router = useRouter();
-  const searchParams = useSearchParams();
 
   const { register, handleSubmit, formState: { errors }, watch } = useForm({
     resolver: zodResolver(formSchema),
