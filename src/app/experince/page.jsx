@@ -21,10 +21,7 @@ export default function ExperienceSelection() {
     resolver: zodResolver(
 
     ),
-    defaultValues: {
-      experience: searchParams.get("experience") || "",
-
-    },
+  
   });
   useEffect(() => {
     localStorage.setItem("experience", selected);
