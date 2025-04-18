@@ -21,17 +21,8 @@ export default function HeaderSection() {
   const router = useRouter();
 
   const { register, handleSubmit, formState: { errors }, watch } = useForm({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      firstName: searchParams.get("firstName") || "",
-      surName: searchParams.get("surName") || "",
-      email: searchParams.get("email") || "",
-      phone: searchParams.get("phone") || "",
-      city: searchParams.get("city") || "",
-      country: searchParams.get("country") || "",
-      pincode: searchParams.get("pincode") || "",
-      experience: searchParams.get("experience") || "",
-    },
+    resolver: zodResolver(formSchema)
+    
   });
 
   const [photo, setPhoto] = useState(null);
